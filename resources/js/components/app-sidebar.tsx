@@ -1,4 +1,3 @@
-// resources/js/components/app-sidebar.tsx
 import { NavMain } from '@/components/nav-main';
 import {
     Sidebar,
@@ -22,7 +21,7 @@ const mainNavItems: NavItem[] = [
     },
     {
         title: 'Learner Progress',
-        href: home(), // We'll update this route later
+        href: { url: '/learner-progress', method: 'get' },
         icon: Users,
     },
 ];
